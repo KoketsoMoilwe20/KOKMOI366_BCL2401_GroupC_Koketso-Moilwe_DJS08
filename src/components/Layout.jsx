@@ -1,8 +1,12 @@
-import React from "react"
-import {Outlet} from "react-router-dom" /* The outlet creates a hole where the matching route can render */
+import React from "react";
+import { Outlet } from "react-router-dom"; /* The outlet creates a hole where the matching route can render */
+import Header from "./Header"
 
 export default function Layout() {
-    return(
-        <h1>This is the Layout Route</h1>
-    )
+  return (
+    <>
+      <Header />
+      <Outlet />
+    </>
+  );
 }
